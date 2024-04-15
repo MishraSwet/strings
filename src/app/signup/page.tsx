@@ -1,5 +1,6 @@
+import Form from '../components/Form'
 export default function Signup() {
-    return (<div>
-        Signup Page
-    </div>)
+    return <div>
+        <Form label="Name" placeholder='Your Name'/>
+    </div>
 }
