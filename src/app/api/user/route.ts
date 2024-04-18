@@ -5,3 +5,12 @@ export function GET(req: NextRequest) {
         "Message":"Success"
     })
 }
+
+export function POST(req: NextRequest) {
+    //Validate req body
+    //Create User in DB
+
+    const body = req.body;
+    return Response.json{ "msg":"User Created Successfully"}
+
+}
