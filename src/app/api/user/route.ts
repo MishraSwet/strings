@@ -11,6 +11,6 @@ export function POST(req: NextRequest) {
     //Create User in DB
 
     const body = req.body;
-    return Response.json{ "msg":"User Created Successfully"}
+    return Response.json({ "msg":"User Created Successfully"})
 
 }
