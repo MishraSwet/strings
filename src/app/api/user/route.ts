@@ -14,3 +14,12 @@ export function POST(req: NextRequest) {
     return Response.json({ "msg":"User Created Successfully"})
 
 }
+
+export function PUT(req: NextRequest) {
+    //Validate req body
+    //Create User in DB
+
+    const body = req.body;
+    return Response.json({ "msg":"User Details Edited"})
+
+}
