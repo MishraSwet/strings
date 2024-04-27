@@ -1,3 +1,3 @@
 export default function page() {
-    return <div>Feed</div>
+    return <div>Feed Component Changes</div>
 }
