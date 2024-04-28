@@ -1,3 +1,9 @@
 export default function page() {
-    return <div>Feed Component Changes</div>
+    return <div className="flex flex-col">
+    <Status />
+    <Post username="User" title="Post1" tags="friend 1,friend 2" />
+    <Post username="User" title="Post1" tags="friend 1,friend 2" />
+    <Post username="User" title="Post1" tags="friend 1,friend 2" />
+    <Post username="User" title="Post1" tags="friend 1,friend 2" />
+</div>
 }
