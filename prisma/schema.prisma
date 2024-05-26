@@ -35,3 +35,9 @@ model Comments {
   time DateTime
   content String
 }
+
+model Group{
+  id Int @id@default(autoincrement())
+  time DateTime
+}
+
