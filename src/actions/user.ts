@@ -15,3 +15,7 @@ export async function signup(username: string, password: string) {
 
     return "Signed up!"
 }
+
+export async function createPost(username: string, content: String) {
+    return "Post Created"
+}
