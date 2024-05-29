@@ -20,3 +20,7 @@ export async function createPost(username: string, content: string) {
     return "Post Created"
 }
 
+export async function addComment(username: string, content: string) {
+    return "Comment Added"
+}
+
