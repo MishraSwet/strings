@@ -24,3 +24,7 @@ export async function addComment(username: string, content: string) {
     return "Comment Added"
 }
 
+export async function addLike(username: string, postid: string) {
+    return "Like Added"
+}
+
