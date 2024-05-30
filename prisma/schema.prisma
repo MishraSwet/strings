@@ -28,7 +28,7 @@ model Post {
   time DateTime
   content String
   img String?
-  author User @relation(fields:[authorId],references:[id])
+  author User @relation(fields:[authorId] , references:[id])
   authorId Int
 }
 
