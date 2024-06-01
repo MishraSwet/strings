@@ -2,15 +2,18 @@
 
 import client from "@/db"
 
-export async function signup(username: string, password: string) {
+export async function signup(username: string, password: string,phone:string,email:string) {
     // should add zod validation here
     const user = await client.user.create({
         data: {
             username: username,
-            password: password
-        }
+            password: password,
+            phone: phone,
+            email: email,
+            
+        },
     });
-
+                                               
     console.log(user.id);
 
     return "Signed up!"

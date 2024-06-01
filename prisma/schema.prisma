@@ -19,30 +19,27 @@ model User {
   phone String @unique
   username String
   password String
-  createdAt DateTime
+  createdAt DateTime @default(now())
   Posts Post[]
-  Commentss Comments[]
+  Comments Comment[]
 }
 
 model Post {
   id Int @id@default(autoincrement())
-  time DateTime
+  createdAt DateTime @default(now())
   content String
   img String?
   author User @relation(fields:[authorId] , references:[id])
   authorId Int
 }
 
-model Comments {
+model Comment {
   id Int @id@default(autoincrement())
-  time DateTime
+  createdAt DateTime @default(now())
   content String
   author User @relation(fields:[authorId] , references:[id])
   authorId Int
 }
 
-model Group{
-  id Int @id@default(autoincrement())
-  time DateTime
-}
+
 
