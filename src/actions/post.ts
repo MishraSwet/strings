@@ -4,6 +4,8 @@ import client from "@/db"
 interface postprops{
     content: string,
     img?: string,
-    author:Author,
+    author:any,
 }
-export default function createPost({content,img,author}:postprops)
+export default function createPost({ content, img, author }: postprops) {
+    return "createPost"
+}
