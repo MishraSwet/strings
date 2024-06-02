@@ -6,6 +6,14 @@ interface postprops{
     img?: string,
     author:any,
 }
-export default function createPost({ content, img, author }: postprops) {
+export function createPost({ content, img, author }: postprops) {
     return "createPost"
+}
+
+export function LikePost() {
+    return "Post Liked"
+}
+
+export function BookmarkPost() {
+    return "Post Bookmarked"
 }
