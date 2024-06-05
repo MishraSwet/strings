@@ -5,4 +5,7 @@ export function addComment(id: number, flag: boolean) {
     return "Comment Added"
 }
 
+export function editComment(id: number, flag: boolean) {
+    return "Comment Edited"
+}
 
