@@ -9,3 +9,7 @@ export function editComment(id: number, flag: boolean) {
     return "Comment Edited"
 }
 
+export function deleteComment(id: number, flag: boolean) {
+    return "Comment Deleted"
+}
+
