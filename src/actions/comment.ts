@@ -1,7 +1,13 @@
 "use server"
 import client from "@/db"
 
-export function addComment(id: number, flag: boolean) {
+export function addComment(id: number, content: string) {
+    client.comment.create({
+        data: {
+            content: content,
+            authorId:id
+        }
+    })
     return "Comment Added"
 }
 
