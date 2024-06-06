@@ -11,7 +11,14 @@ export function addComment(id: number, content: string) {
     return "Comment Added"
 }
 
-export function editComment(id: number, flag: boolean) {
+export function editComment(id: number, content: string) {
+    client.comment.update({
+        where: {
+            id
+        },
+        data: {
+        content:content
+    }})
     return "Comment Edited"
 }
 
