@@ -22,7 +22,7 @@ export function editComment(id: number, content: string) {
     return "Comment Edited"
 }
 
-export function deleteComment(id: number, flag: boolean) {
+export function deleteComment(id: number) {
     client.comment.delete({
         where: {
             id
