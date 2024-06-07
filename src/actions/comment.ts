@@ -23,6 +23,11 @@ export function editComment(id: number, content: string) {
 }
 
 export function deleteComment(id: number, flag: boolean) {
+    client.comment.delete({
+        where: {
+            id
+        }
+    })
     return "Comment Deleted"
 }
 
