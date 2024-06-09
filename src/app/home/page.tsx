@@ -4,15 +4,16 @@ export default function Home() {
     </div>
 }
 
+
 import { HomeIcon,AlertIcon,MessageIcon,GroupsIcon,UserIcon,Logout } from "@/components/Icons/NavIcons"
 function Navbar() {
     return <div className="flex flex-col justify-between h-full w-2/12 p-2">
         <div className="flex flex-col justify-between ">
-            <HomeIcon />
-            <AlertIcon />
-            <MessageIcon />
-            <GroupsIcon />
-            <UserIcon />
+            <HomeIcon/>
+            <AlertIcon/>
+            <MessageIcon/>
+            <GroupsIcon/>
+            <UserIcon/>
         </div>
         <div className="flex flex-col ">
             <Logout/>
