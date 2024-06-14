@@ -46,7 +46,7 @@ function PostCard() {
 }
 
 function Header() {
-    return <div className="w-full border-2 h-[64px] mb-2">Header</div>
+    return <div className="w-full border-2 h-[64px] mb-2">Strings</div>
 }
 
 function NewPost() {
