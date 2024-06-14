@@ -51,10 +51,10 @@ function Header() {
 
 function NewPost() {
     return <div className="w-full md:w-10/12 lg:mx-auto h-1/3 border-2 flex justify-around my-2">
-        <div className="flex w-4/12 border-2 my-3">Img</div>
+        <div className="flex w-4/12 border-2 my-3">+</div>
         <div className="flex flex-col w-6/12 border-2 my-2 justify-between">
             <div className="border-2 h-4/5">Content</div>
-            <div className="border-2 h-1/5">Buttons</div>
+            <button className="border-2 h-1/5">Buttons</button>
         </div>
     </div>
 }
