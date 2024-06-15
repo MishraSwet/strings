@@ -26,7 +26,8 @@ function Navbar() {
 function Feed() {
     return <div className="flex flex-col h-full border-2 col-span-10 
     lg:col-span-8 ">
-        <Header/>
+        <Header />
+        <NewPost />
         <PostCard />
     </div>
 }
