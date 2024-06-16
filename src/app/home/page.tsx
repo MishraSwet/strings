@@ -55,7 +55,7 @@ function NewPost() {
         <div className="flex w-4/12 border-2 my-3">+</div>
         <div className="flex flex-col w-6/12 border-2 my-2 justify-between">
             <div className="border-2 h-4/5">Content</div>
-            <button className="border-2 h-1/5">Buttons</button>
+            <button className="border-2 h-1/5 bg-green-700 text-white">CREATE</button>
         </div>
     </div>
 }
