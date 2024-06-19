@@ -1,9 +1,5 @@
 import NextAuth from "next-auth";
 
-import { NextRequest, NextResponse } from "next/server"
+const handler = NextAuth({ providers:[]});
+export {handler as GET , handler as POST}
 
-export function GET(req: NextRequest) {
-    return NextResponse.json({
-        message: "Handler"
-    })
-}
