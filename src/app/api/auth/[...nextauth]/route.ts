@@ -1,3 +1,5 @@
+import NextAuth from "next-auth";
+
 import { NextRequest, NextResponse } from "next/server"
 
 export function GET(req: NextRequest) {
