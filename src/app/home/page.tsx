@@ -60,3 +60,6 @@ function NewPost() {
     </div>
 }
 
+function AlertCard() {
+    return <div>AlertCard</div>
+}
