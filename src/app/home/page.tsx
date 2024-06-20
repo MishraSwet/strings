@@ -59,3 +59,4 @@ function NewPost() {
         </div>
     </div>
 }
+
