@@ -9,7 +9,7 @@ export default function Alerts() {
 }
 
 
-export function AlertCard() {
+export function AlertCard() { 
     return <div>
         <div>Logo</div>
         <div>User Action</div>
