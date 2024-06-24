@@ -1,6 +1,13 @@
+interface AlertProps{
+    Logo: String,
+    UserId: String | number,
+    Text : String
+}
+
 export default function Alerts() {
     return <AlertCard />
 }
+
 
 export function AlertCard() {
     return <div>
