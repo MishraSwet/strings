@@ -1,5 +1,11 @@
 export default function Chat() {
     return <div>
-        Chat Page
+        <ChatCard/>
+    </div>
+}
+
+export function ChatCard() {
+    return <div>
+        
     </div>
 }
