@@ -7,7 +7,7 @@ export default function Chat() {
 
 export function ChatCard() {
     return <div>
-
+        ...
     </div>
 }
 
