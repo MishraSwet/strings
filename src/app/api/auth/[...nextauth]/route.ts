@@ -29,7 +29,9 @@ const handler = NextAuth({
                 if(!credentials?.email)
                     return null;
                 const email = credentials.email;
-                const user = await client.user.find();
+                const user = await client.user.findFirst(
+                   
+                );
 
                 // Step 3: Return user object if authentication is successful
                 if (user) {
