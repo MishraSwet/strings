@@ -1,6 +1,8 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
+import client from "@/db"
+
 
 async function findUserByEmailAndPassword(email: string, password: string){
     
@@ -27,7 +29,7 @@ const handler = NextAuth({
                 if(!credentials?.email)
                     return null;
                 const email = credentials.email;
-                const user = await findUserByEmailAndPassword(email, password);
+                const user = await client.user.find();
 
                 // Step 3: Return user object if authentication is successful
                 if (user) {
