@@ -63,3 +63,7 @@ function NewPost() {
 function AlertCard() {
     return <div>AlertCard</div>
 }
+
+function AlertHandler() {
+    return <div>Alert Handler</div>
+}
