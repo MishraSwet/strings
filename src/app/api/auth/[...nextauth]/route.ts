@@ -4,9 +4,6 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import client from "@/db"
 
 
-async function findUserByEmailAndPassword(email: string, password: string){
-    
-}
 const handler = NextAuth({
     providers: [
         GoogleProvider({
