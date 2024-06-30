@@ -22,7 +22,7 @@ const handler = NextAuth({
                     type: "password",
                 },
             },
-            async authorize(credentials, req) {
+            async authorize(credentials) {
                 if(!credentials?.email)
                     return null;
                 const email = credentials.email;
