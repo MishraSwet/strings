@@ -37,6 +37,11 @@ const handler = NextAuth({
             },
         }),
     ],
+    callbacks: {
+        jwt:(token)=>{
+            
+        }
+    }
 });
 
 export { handler as GET, handler as POST };
