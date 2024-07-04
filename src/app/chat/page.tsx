@@ -16,3 +16,9 @@ export function ChatBar() {
         ...
     </div>
 }
+
+export function ChatEngine() {
+    return <div>
+        
+    </div>
+}
