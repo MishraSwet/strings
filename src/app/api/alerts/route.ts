@@ -7,6 +7,7 @@ interface alert{
 }
 const wss = new WebSocketServer({ newserver: true })
 
+
 wss.on('connection', (ws:WebSocketServer) => {
     ws.on('alert', (alert:string) => {
         const data:alert = JSON.parse(alert);
