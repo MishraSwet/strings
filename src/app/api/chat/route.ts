@@ -13,5 +13,5 @@ wss.on('connection', function Connect(ws: WebSocketServer) {
         const content = message.content;
         const uid = message.uid;
         const target = message.target;
-    }
+    })
 })
