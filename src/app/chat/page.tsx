@@ -19,10 +19,10 @@ export function ChatBar() {
 }
 
 export function ChatEngine() {
-    const [socket, setSocket] = useState(null);
+    const [socket, setSocket] = useState<WebSocket|null>(null);
 
     useEffect(() => {
-        const socket = new WebSocket('ws://localhost:3000');
+        const socket = new WebSocket('ws://localhost:8081');
         setSocket(socket);
 
         socket.onmessage = (event) => {
