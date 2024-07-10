@@ -5,10 +5,11 @@ interface alert{
     action: string;
     content: string;
 }
-const wss = new WebSocketServer({ port:8080 })
+const server = new WebSocketServer({ port:8080 })
 
 
-wss.on('connection', (ws: WebSocketServer) => {
+server.on('connection', (ws: WebSocketServer) => {
+
     console.log("New Client LOL")
     ws.on('alert', (alert:string) => {
         const data:alert = JSON.parse(alert);
