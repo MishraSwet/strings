@@ -1,4 +1,6 @@
 //Alerts Api Route Go Here
+import { log } from 'console';
+import { CloudCog } from 'lucide-react';
 import { WebSocketServer } from 'ws';
 interface alert{
     uid: number;
@@ -18,4 +20,8 @@ server.on('connection', (ws: WebSocketServer) => {
         const content = data.content;
         const message = uid + "" + action + "Your" + content
     })
+    ws.on('close', () => {
+        console.log("Disconnected")
+    })
 })
+
