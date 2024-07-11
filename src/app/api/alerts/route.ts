@@ -7,6 +7,11 @@ interface alert{
     action: string;
     content: string;
 }
+interface client{
+    socket: WebSocket
+    queue: string[]
+}
+const clients = {}
 const server = new WebSocketServer({ port:8080 })
 
 
