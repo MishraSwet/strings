@@ -18,6 +18,15 @@ const server = new WebSocketServer({ port:8080 })
 server.on('connection', (ws: WebSocketServer) => {
 
     console.log("New Client LOL")
+    ws.on('identify', (clientid: number) => { 
+        //if client not found
+        {
+            //create new client and add to socket
+            const data = {
+                
+            }
+        }
+    })
     ws.on('alert', (alert:string) => {
         const data:alert = JSON.parse(alert);
         const uid = data.uid;
