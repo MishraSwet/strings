@@ -27,9 +27,7 @@ server.on('connection', (ws: WebSocketServer) => {
                 queue:[]
             }
         }
-        //if found empty queue first
-        const queue = clients.clientid.queue;
-        queue.foreach((item)=>ws.send(item))
+
     })
     ws.on('alert', (alert:string) => {
         const data:alert = JSON.parse(alert);
