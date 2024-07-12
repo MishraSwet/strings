@@ -11,7 +11,7 @@ interface client{
     socket: WebSocket
     queue: string[]
 }
-const clients = {}
+
 const server = new WebSocketServer({ port:8080 })
 
 
@@ -22,10 +22,14 @@ server.on('connection', (ws: WebSocketServer) => {
         //if client not found
         {
             //create new client and add to socket
-            const data = {
-                
+            const clientid = {
+                socket: ws,
+                queue:[]
             }
         }
+        //if found empty queue first
+        const queue = clients.clientid.queue;
+        queue.foreach((item)=>ws.send(item))
     })
     ws.on('alert', (alert:string) => {
         const data:alert = JSON.parse(alert);
