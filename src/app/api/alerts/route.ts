@@ -8,7 +8,8 @@ interface alert{
     content: string;
 }
 
-
+const clients: Map<string, WebSocket> = new Map();
+const msgqueue: Map<string, string[]> = new Map();
 
 
 const server = new WebSocketServer({ port:8080 })
