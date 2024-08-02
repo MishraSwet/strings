@@ -61,7 +61,7 @@ function NewPost() {
 }
 
 function AlertCard() {
-    return <div>AlertCard</div>
+    return <div className="w-full md:w-9/12 lg:8/12">AlertCard</div>
 }
 
 function AlertHandler() {
